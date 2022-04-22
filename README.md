@@ -1,11 +1,12 @@
 #x86
 
 ## builded by buildroot
-tar -tf x86/images-x86.tar 
-images/
-images/rootfs.ext2
-images/start-qemu.sh
-
+```
+tar -tf x86/images-x86.tar <\br>
+images/  <\br>
+images/rootfs.ext2   <\br>
+images/start-qemu.sh   <\br>
+```
 ## run
 
 ```
