@@ -33,3 +33,8 @@ buildroot login: root
     link/sit 0.0.0.0 brd 0.0.0.0
 # 
 ```
+## run2
+```
+qemu-system-x86_64 -M pc -kernel bzImage -drive file=rootfs.ext2,if=virtio,format=raw -append "rootwait root=/dev/vda console=tty1 console=ttyS0"  -net nic,model=virtio -net user,hostfwd
+=tcp::222-:22 -nographic
+```
