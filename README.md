@@ -38,3 +38,10 @@ buildroot login: root
 qemu-system-x86_64 -M pc -kernel bzImage -drive file=rootfs.ext2,if=virtio,format=raw -append "rootwait root=/dev/vda console=tty1 console=ttyS0"  -net nic,model=virtio -net user,hostfwd
 =tcp::222-:22 -nographic
 ```
+## run3
+```
+qemu-system-x86_64 -enable-kvm -smp 4 -m 8G -machine q35 -hda focal-server-cloudimg-amd64-disk-kvm.img -nographic
+```
+
+root 
+passowd : root
